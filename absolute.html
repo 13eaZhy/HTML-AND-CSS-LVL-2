@@ -1,0 +1,68 @@
+<!-- Felul in care elementele se vor pozitiona in document = Fereastra - Parinte - Self-->
+<!-- position
+  relative
+  absolute
+  fixed
+  sticky
+
+***** Schema da posibilitatea de a plasa elementul pe el insusi (pozitia initiala) fara sa atinga alte elemente)
+ -->
+<!-- Absolute ! pozitioneaza elimentul indiferent de celea vecine - parinte etc
+
+Cand folosim elementul absolute, browserul taie elementul si ii ofera lui alta fereastra
+
+Se comporta asa ca si cum ar fi singur / si invers
+
+Absolute masoara left - right - top - bottom din partea ferestrei, (din partea dreapta)
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Relative Position</title>
+  <style>
+
+    body{
+      background-color: orange;
+    }
+
+    div{
+      width: 100px;
+      height: 100px;
+      font-size: 50px;
+      color: orange;
+    }
+    #d1{
+      background-color: green;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      z-index: 3;
+    }
+
+    #d2{
+      background-color: brown;
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      z-index: 2;
+    }
+
+    #d3{
+      background-color: cyan;
+      position: absolute;
+      right: 100px;
+      bottom: 100px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="d1">1</div>
+  <div id="d2">2</div>
+  <div id="d3">3</div>
+</body>
+</html>

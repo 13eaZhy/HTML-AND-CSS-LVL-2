@@ -1,0 +1,47 @@
+<!-- Felul in care elementele se vor pozitiona in document = Fereastra - Parinte - Self-->
+<!-- position
+  relative
+  absolute
+  fixed
+  sticky
+
+***** Schema da posibilitatea de a plasa elementul pe el insusi (pozitia initiala) fara sa atinga alte elemente)
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Relative Position</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+    }
+    #d1{
+      background-color: green;
+    }
+
+    #d2{
+      background-color: brown;
+      /*margin-top: 50px;
+      margin-left: 50px;*/
+      position:relative;
+      left: 50px;
+      bottom: 50px;
+      z-index: -2; /*adincimea elimentului-layers*/
+    }
+
+    #d3{
+      background-color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <div id="d1">1</div>
+  <div id="d2">2</div>
+  <div id="d3">3</div>
+</body>
+</html>
