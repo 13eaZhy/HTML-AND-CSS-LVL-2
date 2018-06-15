@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drop down MENU</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body{
+        background-color: orange;
+        color: white;
+      }
+      a{
+        color: orange;
+        font-size: 20px;
+        text-decoration: none;
+        /*text-decoration: none;*/
+      }
+      ul{
+        background-color: #666;
+        height: 50px;
+      }
+      li{
+        float: left;
+        padding-top: 15px;
+        list-style: none;
+      }
+      .fa{
+        margin-right: 10px;
+        margin-left: 40px;
+      }
+      h1{
+        color: #666;
+      }
+      a:hover{
+        color: red;
+      }
+    #drop{
+      position: absolute;
+      display: none;
+      height: 110px;
+    }
+    li:hover #drop{
+      display: block;
+    }
+    #drop li{
+      float: none;
+    }
+    </style>
+</head>
+<body>
+  <h1>Dropdown menu example</h1>
+  <hr>
+    <ul>
+      <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+
+        <li>
+          <a href=""><i class="fa fa-list" aria-hidden="true"></i>SERVICES</a>
+          <ul id="drop">
+            <li><a href="">professional hacking</a></li>
+            <li><a href="">content generating</a></li>
+            <li><a href="">copy pasting</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href=""><i class="fa fa-phone-square" aria-hidden="true"></i>CONTACTS</a>
+        </li>
+    </ul>
+</body>
+</html>
